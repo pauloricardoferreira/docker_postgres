@@ -1,0 +1,25 @@
+version: '3.5'
+
+services:
+  postgres-prd:
+    image: postgres:14
+    container_name: postgres-prd
+    environment:
+      POSTGRES_USER: prd
+      POSTGRES_PASSWORD: prd
+      POSTGRES_DB: live
+    volumes:
+      - postgres-db-volume-prd:/var/lib/postgresql/data
+    restart: always
+    networks:
+      - postgres-prd
+    ports:
+      - 5433:5432
+
+volumes:
+  postgres-db-volume-prd:
+
+networks:
+  postgres-prd:
+    external: true
+    name: postgres-prd
