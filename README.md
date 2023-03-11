@@ -54,7 +54,7 @@ volumes:
 
 Algo importante são as redes do Docker.
 
-Cada container sobre em uma rede privada, então se você deseja ter comunicação entre diversos containers é necessário criar redes externa e adiciona-las no docker-compose de cada serviço.
+Cada container sobe em uma rede privada, então se você deseja ter comunicação entre diversos containers é necessário criar redes externas e adiciona-las no docker-compose de cada serviço.
 
 O Exemplo abaixo mostra uma configuração de redes entre um postgres separado para Apache Superset e o Apache Superset.
 
@@ -106,8 +106,9 @@ As redes são criadas externamento com o comando `docker network create nome_da_
 Com esta configuração o Docker é capaz de resolver nomes, transformando o nome do serviço `postgres-superset` em um endereço válido dentro do Docker
 
 
+## Exemploso de docker-compose para postgres
 
-## **Postgres para Apache Superset**
+**Postgres para Apache Superset**
 
 ```yml
 version: '3.5'
@@ -137,7 +138,7 @@ networks:
     name: postgres-superset
 ```
 
-## **Postgres para Apache Airflow**
+**Postgres para Apache Airflow**
 
 ```yml
 version: '3.5'
