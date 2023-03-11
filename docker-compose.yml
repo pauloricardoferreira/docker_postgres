@@ -14,7 +14,7 @@ services:
     networks:
       - postgres
     ports:
-      - 5444:5432
+      - 5433:5432
 
 volumes:
   postgres:
