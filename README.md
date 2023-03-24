@@ -2,7 +2,7 @@
 
 Este repositório contem docker-compose com o Postgres Padrão.
 
-Deixo abaixo oustros padrões para Projetos como Apache Airflow, Apache SUperset, e vou adicionando conforme e necessidade.
+Deixo abaixo outros padrões para Projetos como Apache Airflow, Apache SUperset, e vou adicionando conforme e necessidade.
 
 Então você pode realizar uma cópia do docker-compose.yml para cada projeto, ou se preferiri, iniciar um container com o postgres padrão e gerência você mesmo a criação dos usuários e bases de dados.
 
